@@ -13,5 +13,9 @@ var $aboveveggies = $('<ul>');
 $('body').append($aboveveggies);
 
 $('ul li').each(function () {
-  $('.above').append('aboveveggies')
-}
+  if (belowveggies.below == true){
+    $('ul').append('.below')
+  } else{
+    $('ul').append('.above')
+  }
+)};
